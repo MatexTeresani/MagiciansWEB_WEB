@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "MagicianWEB": {
+    "MagicianWeb": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "MagicianWEB:build:production"
+              "buildTarget": "MagicianWeb:build:production"
             },
             "development": {
-              "buildTarget": "MagicianWEB:build:development"
+              "buildTarget": "MagicianWeb:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,8 +97,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": false
   }
 }
