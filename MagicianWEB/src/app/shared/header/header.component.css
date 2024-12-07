@@ -1,0 +1,63 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+    position: sticky; /* El header permanece fijo en la parte superior */
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+    height: 80px;
+}
+
+header:hover {
+    backdrop-filter: blur(3px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px; /* Ajusta el tamaño del ícono */
+    transform: scale(1); /* Tamaño inicial */
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E0E1DD;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff5722; /* Cambia el color al pasar el mouse */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff5722;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%; /* Agrega una línea de subrayado animada */
+}
