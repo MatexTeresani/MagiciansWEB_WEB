@@ -1,0 +1,31 @@
+.project {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+    margin-top: 0;
+    color: #007acc;
+}
+
+.project p {
+    margin-bottom: 1rem;
+}
+
+.project a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007acc;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #005fa3;
+}

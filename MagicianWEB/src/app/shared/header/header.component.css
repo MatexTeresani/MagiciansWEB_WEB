@@ -61,3 +61,79 @@ nav a::after {
 nav a:hover::after {
     width: 100%; /* Agrega una línea de subrayado animada */
 }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    nav {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+        border-radius: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        background-color: rgba(244, 162, 89, 0.2);
+    }
+
+    .logo img {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 12px 8px;
+    }
+
+    nav {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 6px 10px;
+        background-color: rgba(244, 162, 89, 0.1);
+    }
+
+    nav a:hover {
+        background-color: rgba(244, 162, 89, 0.3);
+    }
+
+    .logo img {
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+}
