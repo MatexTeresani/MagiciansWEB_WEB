@@ -1,6 +1,6 @@
 .footer {
-    background-color: black;
-    color: white;
+    background-color: #1B263B;
+    color: #E0E1DD;
     padding: 3rem 0;
     width: 100%;
     margin-top: auto;
@@ -31,10 +31,11 @@
 }
 
 .footer-column a {
-    color: #999;
+    color: #778DA9;
     text-decoration: none;
     transition: color 0.2s ease;
     display: block;
+    margin-bottom: 1%;
     padding: 0.5rem 0;
 }
 
@@ -53,7 +54,7 @@
 }
 
 .footer-column h3 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-size: 1.1rem;
     font-weight: 500;
     color: #ffffff;
