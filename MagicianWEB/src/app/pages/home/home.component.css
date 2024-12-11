@@ -7,6 +7,14 @@
 
 }
 
+.Portada h1 {
+    user-select: none;
+}
+
+.Portada h2 {
+    user-select: none;
+}
+
 .imagen-Logo{
     height: 600px;
 }
@@ -46,7 +54,7 @@
 .conseguir{
     margin: auto;
     padding: 5%; 
-    width: 80%;
+    width: 89%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.61); /* Color semitransparente */
@@ -79,8 +87,10 @@
     font-size: 60px;
     border: none;
     list-style: none;
+    user-select: none;
 }
 
 .consige button:hover{
-    background-color: #456d60;
+    background-color: #466e62;
 }
+
