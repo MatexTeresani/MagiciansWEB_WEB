@@ -5,6 +5,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ConseguirComponent } from './pages/conseguir/conseguir.component';
+import { FondoDeEstrellasComponent } from './fondo-de-estrellas/fondo-de-estrellas.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { ConseguirComponent } from './pages/conseguir/conseguir.component';
     ConseguirComponent, 
     FooterComponent,
     HeaderComponent,
+    FondoDeEstrellasComponent,
     RouterOutlet,
   ],
   templateUrl: './app.component.html',
