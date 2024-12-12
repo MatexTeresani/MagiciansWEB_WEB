@@ -16,7 +16,10 @@
 }
 
 .imagen-Logo{
-    height: 600px;
+    position: relative;
+    top: 100px;
+    left: 100px;
+    height: 400px;
 }
 
 .Magician-H1{
@@ -28,7 +31,7 @@
     left: 310px;
 }
 
-.Web-H1{
+.tech-H1{
     color: #E0E1DD;
     font-size: 200px;
     position: absolute;
@@ -40,6 +43,8 @@
     position: absolute;
     top: 10px;
     right: 2%;
+    z-index: -100;
+    
 }
 
 .CTPW{
@@ -94,3 +99,40 @@
     background-color: #466e62;
 }
 
+@media(max-width: 600px) {
+    .home{
+        margin-bottom: 100%;
+    }
+
+    
+
+    .mago-img-1{
+        display: none;
+    } 
+
+    .imagen-Logo{
+        position: relative;
+        top: 50px;
+        left: 10px;
+        height: 350px;
+    }
+
+    .Magician-H1{
+        top: 190px;
+        left: 200px;
+        font-size: 50px;
+    }
+
+    .tech-H1{
+        top: 350px; 
+        left: 130px;
+        font-size: 50px;
+    }
+
+    .CTPW{
+        left: 50px;
+        top:  450px;
+    }
+
+
+}
