@@ -124,22 +124,24 @@ button span {
         height: 40px;
     }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     nav {
         position: fixed;
         top: 80px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.95);
+        right: 0px;
+        width: 60%;
+        height: 100%;
+        background-color: #5B8E7D;
         padding: 20px;
-        transform: translateY(-100%);
+        transform: translateY(-100%);        
         opacity: 0;
-        visibility: hidden;
+        visibility: hidden;        
         transition: all 0.3s ease;
         flex-direction: column;
         align-items: center;
         z-index: 999;
     }
+
 
     nav.active {
         transform: translateY(0);
