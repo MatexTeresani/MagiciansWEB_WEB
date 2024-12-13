@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ConseguirComponent } from './pages/conseguir/conseguir.component';
 import { FondoDeEstrellasComponent } from './fondo-de-estrellas/fondo-de-estrellas.component';
+import { Header2Component } from './shared/header2/header2.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +20,7 @@ import { FondoDeEstrellasComponent } from './fondo-de-estrellas/fondo-de-estrell
     ConseguirComponent, 
     FooterComponent,
     HeaderComponent,
+    Header2Component,
     FondoDeEstrellasComponent,
     RouterOutlet,
   ],

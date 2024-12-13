@@ -76,7 +76,6 @@
     }
 
     .footer-container {
-        padding: 0 1rem;
     }
 
     .footer-columns {
@@ -101,7 +100,6 @@
     .social-icons {
         width: 100%;
         justify-content: space-between;
-        padding: 0 2rem;
     }
 }
 

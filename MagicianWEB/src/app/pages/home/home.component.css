@@ -1,3 +1,7 @@
+main{
+    margin-top: 10%;
+}
+
 .home{
     position: relative;
 }
@@ -100,6 +104,8 @@
     background-color: #466e62;
 }
 
+
+/* los media son lo que da problema*/
 @media(max-width: 768px) {
     .home{
         margin-left: 25%;
