@@ -3,13 +3,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-    position: sticky; /* El header permanece fijo en la parte superior */
+    position: sticky;
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s ease;
-    height: 80px;
+    height: clamp(60px, 8vh, 80px);
+    width: 100%;
 }
 
 header:hover {
@@ -22,18 +22,19 @@ header:hover {
 }
 
 .logo img {
-    height: 70px; /* Ajusta el tamaño del ícono */
-    transform: scale(1); /* Tamaño inicial */
+    height: clamp(40px, 6vh, 70px);
+    width: auto;
+    transform: scale(1);
     transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.2); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    transform: scale(1.2);
 }
 
 nav {
     display: flex;
-    gap: 40px;
+    gap: clamp(20px, 3vw, 40px);
 }
 
 nav a {
@@ -42,10 +43,12 @@ nav a {
     font-weight: bold;
     position: relative;
     transition: color 0.3s ease;
+    font-size: clamp(14px, 1.5vw, 16px);
+    padding: 8px clamp(10px, 1.5vw, 15px);
 }
 
 nav a:hover {
-    color: #F4A259; /* Cambia el color al pasar el mouse */
+    color: #F4A259;
 }
 
 nav a::after {
@@ -60,7 +63,7 @@ nav a::after {
 }
 
 nav a:hover::after {
-    width: 100%; /* Agrega una línea de subrayado animada */
+    width: 100%;
 }
 
 button {
@@ -83,68 +86,41 @@ button span {
     transition: all 0.3s ease;
 }
 
-
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
     header {
-        padding: 12px 8px;
+        padding: 20px 40px;
     }
 
     nav {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 13px;
-        padding: 6px 10px;
-        background-color: rgba(244, 162, 89, 0.1);
-    }
-
-    nav a:hover {
-        background-color: rgba(244, 162, 89, 0.3);
-    }
-
-    .logo img {
-        height: 45px;
+        padding-right: clamp(20px, 3vw, 40px);
     }
 }
 
-@media screen and (max-width: 320px) {
-    nav {
-        grid-template-columns: 1fr;
-        gap: 8px;
+@media screen and (max-width: 1199px) and (min-width: 769px) {
+    header {
+        padding: 15px 30px;
     }
 
-    nav a {
-        font-size: 12px;
-        padding: 5px 8px;
-    }
 
-    .logo img {
-        height: 40px;
-    }
 }
-@media (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     nav {
         position: fixed;
-        top: 80px;
-        right: 0px;
-        width: 60%;
-        height: 100%;
+        top: clamp(60px, 8vh, 80px);
+        width: 100%;
+        height: calc(100vh - clamp(60px, 8vh, 80px));
         background-color: #5B8E7D;
-        padding: 20px;
-        transform: translateY(-100%);        
+        transform: translateX(100%);
         opacity: 0;
-        visibility: hidden;        
+        visibility: hidden;
         transition: all 0.3s ease;
         flex-direction: column;
         align-items: center;
-        z-index: 999;
     }
 
-
     nav.active {
-        transform: translateY(0);
+        transform: translateX(0);
         opacity: 1;
         visibility: visible;
     }
@@ -152,5 +128,71 @@ button span {
     button {
         display: flex;
     }
-    
+}
+
+@media screen and (max-width: 480px) {
+
+    nav a {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    nav {
+        padding: 15px 0;
+        width: min(250px, 80%);
+        right: 6%;
+        transform: translateX(calc(100% + 15px));
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 6px 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    nav {
+        right: 4%;
+        transform: translateX(calc(100% + 10px));
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    header {
+        height: 60px;
+    }
+
+    nav {
+        top: 60px;
+        padding: 10px 0;
+        width: min(280px, 60%);
+    }
+
+    nav a {
+        padding: 5px 10px;
+    }
 }

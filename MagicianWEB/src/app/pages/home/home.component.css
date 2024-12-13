@@ -25,10 +25,11 @@
 .Magician-H1{
     color: #778DA9;
     position: absolute;
-    position: absolute;
     font-size: 150px;
     top: 160px;
     left: 310px;
+    width: fit-content;
+    overflow: hidden;
 }
 
 .tech-H1{
