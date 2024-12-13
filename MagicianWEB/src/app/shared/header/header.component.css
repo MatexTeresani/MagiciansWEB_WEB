@@ -94,14 +94,8 @@ button span {
         gap: 12px;
     }
 
-    nav a {
-        font-size: 13px;
-        padding: 6px 10px;
-        background-color: rgba(244, 162, 89, 0.1);
-    }
-
     nav a:hover {
-        background-color: rgba(244, 162, 89, 0.3);
+        color: #bfbfbf;    
     }
 
     .logo img {
@@ -124,16 +118,16 @@ button span {
         height: 40px;
     }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     nav {
         position: fixed;
         top: 80px;
         right: 0px;
         width: 60%;
-        height: 100%;
-        background-color: #5B8E7D;
+        height: 550px;
+        background-color: #1B263B;
         padding: 20px;
-        transform: translateY(-100%);        
+        transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;        
         transition: all 0.3s ease;
