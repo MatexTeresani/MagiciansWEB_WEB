@@ -109,6 +109,7 @@
     
     .mago-img-1{
         display: none;
+        visibility: hidden;
     } 
 
     .imagen-Logo{
