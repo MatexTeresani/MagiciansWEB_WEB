@@ -99,8 +99,9 @@
     background-color: #466e62;
 }
 
-@media(max-width: 600px) {
+@media(max-width: 768px) {
     .home{
+        margin-left: 25%;
         margin-bottom: 100%;
     }
 
@@ -134,5 +135,17 @@
         top:  450px;
     }
 
+
+}
+
+@media (max-width: 500px){
+    .home{
+        margin-left:  0%;
+        margin-right: 0%;
+    }
+
+    .consige button{
+        font-size: 40px;
+    }
 
 }
