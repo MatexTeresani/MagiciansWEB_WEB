@@ -23,7 +23,7 @@ export class FondoEstrellasComponent implements OnInit {
     this.stars = Array.from({ length: this.totalStars }, () => ({
       x: Math.random() * 100, // Posición X en porcentaje
       y: Math.random() * 100, // Posición Y en porcentaje
-      size: Math.random() * 10 + 12 // Tamaño aleatorio entre 1 y 3
+      size: Math.random() * 15 + 12 // Tamaño aleatorio entre 1 y 3
     }));
   }
 }
