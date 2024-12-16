@@ -13,7 +13,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class FondoEstrellasComponent implements OnInit {
   stars: { x: number; y: number; size: number }[] = [];
-  totalStars = 50; // Número total de estrellas
+  totalStars = 30; // Número total de estrellas
 
   ngOnInit(): void {
     this.generateStars();

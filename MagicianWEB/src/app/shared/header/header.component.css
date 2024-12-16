@@ -96,7 +96,6 @@ button span {
         top: clamp(60px, 8vh, 80px);
         height: 700px;
         background-color: #5B8E7D;
-        transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
         transition: all 0.3s ease;
@@ -130,11 +129,8 @@ button span {
         height: 45px;
     }
 
-    nav {
-        padding: 15px 0;
-        width: min(250px, 80%);
-        right: 6%;
-        transform: translateX(calc(100% + 15px));
+    nav{
+        width: 90%;
     }
 }
 
@@ -176,7 +172,6 @@ button span {
 
     nav {
         top: 60px;
-        padding: 10px 0;
         width: min(280px, 60%);
     }
 
