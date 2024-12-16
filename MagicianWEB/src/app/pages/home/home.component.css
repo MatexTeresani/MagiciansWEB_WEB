@@ -67,7 +67,7 @@ main{
     width: 80%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
-    background: rgba(27, 38, 59, 0.61); /* Color semitransparente */
+    background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
     z-index: -1; /* Asegura que quede detrás del contenido */ 
     border-radius: 30px;
     margin-top: 22%;
@@ -164,7 +164,7 @@ main{
     height: 100%;
     padding: 8%;
     backdrop-filter: blur(10px); /* Desenfoque */
-    background: rgba(27, 38, 59, 0.61); /* Color semitransparente */
+    background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
     z-index: -1; /* Asegura que quede detrás del contenido */ 
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;

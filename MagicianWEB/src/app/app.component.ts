@@ -5,8 +5,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ConseguirComponent } from './pages/conseguir/conseguir.component';
-import { FondoDeEstrellasComponent } from './fondo-de-estrellas/fondo-de-estrellas.component';
 import { Header2Component } from './shared/header2/header2.component';
+import { FondoEstrellasComponent } from './pages/fondo-estrellas/fondo-estrellas.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,7 @@ import { Header2Component } from './shared/header2/header2.component';
     FooterComponent,
     HeaderComponent,
     Header2Component,
-    FondoDeEstrellasComponent,
+    FondoEstrellasComponent,
     RouterOutlet,
   ],
   templateUrl: './app.component.html',
