@@ -1,11 +1,15 @@
-/* Estilos globales: Aplica a body en lugar de todos los div */
-body {
+
+
+/* Centrado global del body */
+html, body {
+    height: 100%; /* Asegura que el body ocupe toda la pantalla */
     margin: 0;
-    font-family: "Poppins", sans-serif;
-    background-color: #f3f3f3;
-    height: 100vh;
     display: flex;
-    
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    background-color: #f3f3f3; /* Fondo general */
+    font-family: "Poppins", sans-serif;
+    text-align: center;
 }
 
 /* Contenedor principal */
@@ -16,9 +20,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 90%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 
 /* Icono o imagen */
