@@ -147,6 +147,8 @@ main{
     }
 
 
+
+
 }
 
 @media (max-width: 600px){
@@ -200,6 +202,7 @@ main{
 
 @media (max-width: 768px){
     .sobreNosotros{
+        margin-top: 10%;
         grid-template-columns: repeat(1, 1fr);
     }
 
