@@ -3,12 +3,8 @@ h1 {
     padding: 5%;
 }
 
-/* Contenedor de las cartas */
-.container {
-    text-align: center;
-}
 
-.cards {
+.cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Por defecto, 4 columnas */
     gap: 52px;
@@ -18,7 +14,7 @@ h1 {
 }
 
 
-/* Media Queries para adaptar el número de columnas */
+
 @media (max-width: 1200px) {
     .cards {
         grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
@@ -38,24 +34,27 @@ h1 {
 }
 
 .card {
-    background-color: #1a1a2e;
-    border-radius: 70px;
-    padding: 16px;
-    width: 350;
-    height: 590; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-radius: 70px;
+    background-color: hsla(219, 37%, 17%, 0.5);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    color: #FFFFFF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+}
+
 
 .card-image {
     width: 320px;
     height: 240px;
     border-radius: 40px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
 }
 
 /* Colores de fondo para las cartas */
@@ -79,7 +78,11 @@ h1 {
 }
 
 .card p {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
-    line-height: 1.4;
+}
+a   {
+    z-index: 0;
+    text-decoration: none;
+    color: #FFFFFF;
 }
