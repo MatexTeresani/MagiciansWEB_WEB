@@ -1,31 +1,85 @@
-.project {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+h1 {
+    color: #f0f0f0;
+    padding: 5%;
 }
 
-.project h2 {
-    margin-top: 0;
-    color: #007acc;
+/* Contenedor de las cartas */
+.container {
+    text-align: center;
 }
 
-.project p {
-    margin-bottom: 1rem;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Por defecto, 4 columnas */
+    gap: 52px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.project a {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background-color: #007acc;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+
+/* Media Queries para adaptar el número de columnas */
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
 }
 
-.project a:hover {
-    background-color: #005fa3;
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+    }
+}
+
+.card {
+    background-color: #1a1a2e;
+    border-radius: 70px;
+    padding: 16px;
+    width: 350;
+    height: 590; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+}
+
+.card-image {
+    width: 320px;
+    height: 240px;
+    border-radius: 40px;
+    margin-bottom: 12px;
+}
+
+/* Colores de fondo para las cartas */
+.card.yellow .card-image {
+    background-color: #FFD700;
+}
+
+.card.green .card-image {
+    background-color: #2ECC71;
+}
+
+.card.red .card-image {
+    background-color: #E74C3C;
+}
+
+.card h3 {
+    font-size: 40px;
+    margin: 0;
+    text-align: left;
+    align-content: center;
+}
+
+.card p {
+    font-size: 12px;
+    text-align: center;
+    line-height: 1.4;
 }
