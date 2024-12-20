@@ -66,6 +66,9 @@
     padding-top: 1%;
 }
 
+.formulario textarea::placeholder{
+    color: #ffffff;
+}
 .formulario button{
     margin: 10px;
     width: 100%;
