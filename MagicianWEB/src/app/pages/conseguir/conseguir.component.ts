@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-conseguir',
@@ -9,4 +11,12 @@ import { Component } from '@angular/core';
 })
 export class ConseguirComponent {
 
+  constructor(private router: Router) {}
+
+
+  Enviar(){
+     this.router.navigate(['consigue-terminado']); // Navega a la ruta raíz
+
+
+  }
 }

@@ -7,6 +7,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ConseguirComponent } from './pages/conseguir/conseguir.component';
 import { Header2Component } from './shared/header2/header2.component';
 import { FondoEstrellasComponent } from './pages/fondo-estrellas/fondo-estrellas.component';
+import { ConseguirTerminadoComponent } from './pages/conseguir-terminado/conseguir-terminado.component';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,8 @@ import { FondoEstrellasComponent } from './pages/fondo-estrellas/fondo-estrellas
     AppComponent,
     HomeComponent,
     ProjectsComponent,
-    ConseguirComponent, 
+    ConseguirComponent,
+    ConseguirTerminadoComponent, 
     FooterComponent,
     HeaderComponent,
     Header2Component,
