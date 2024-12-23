@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { relative } from 'path';
 
 
@@ -10,4 +11,15 @@ import { relative } from 'path';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
+
+  constructor(private router: Router) {}
+
+
+  consiquehref(){
+     this.router.navigate(['conseguir']).then(() => {
+      window.scrollTo(0, 0);
+     }); // Navega a la ruta raíz
+
+
+  }
 }

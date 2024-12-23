@@ -15,7 +15,9 @@ export class ConseguirComponent {
 
 
   Enviar(){
-     this.router.navigate(['consigue-terminado']); // Navega a la ruta raíz
+     this.router.navigate(['consigue-terminado']).then(() => {
+      window.scrollTo(0, 0);
+     }); // Navega a la ruta raíz
 
 
   }
