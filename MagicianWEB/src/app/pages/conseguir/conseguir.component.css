@@ -86,3 +86,7 @@
 .formulario button:hover{
     background-color: #577141;
 }
+
+ul {
+    list-style: none;
+}

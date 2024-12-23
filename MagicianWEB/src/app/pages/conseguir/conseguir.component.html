@@ -1,22 +1,31 @@
 <main>
     <div class="formulario">
         <h1>Consigue</h1>
-        <form action="" id="fomularioconseguir">
-            <li class="inputsform">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Apellido">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Numero de telefono">
-                <input type="text" placeholder="Nombre de tu empresa">
-            </li>
+        <form action="" id="formularioconseguir">
+            <ul class="inputsform">
+                <li>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </li>
+                <li>
+                    <input type="text" name="apellido" placeholder="Apellido" required>
+                </li>
+                <li>
+                    <input type="email" name="email" placeholder="Email" required>
+                </li>
+                <li>
+                    <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+                </li>
+                <li>
+                    <input type="text" name="empresa" placeholder="Nombre de tu empresa" required>
+                </li>
+            </ul>
             <div class="texto-p-form">
-                <p>¿Podrias detallar el tipo de pagina web que estas buscando?</p>
-                <p>¿Tienes ejemplos de painas webs en mente?</p>
-                <p>Nos seria de gran ayuda que seas lo mas detallado posible posible </p>
+                <p>¿Podrías detallar el tipo de página web que estás buscando?</p>
+                <p>¿Tienes ejemplos de páginas webs en mente?</p>
+                <p>Nos sería de gran ayuda que seas lo más detallado posible.</p>
             </div> 
-            <textarea cols="60" rows="10" wrap="hard" class="" placeholder=". . . . "></textarea>
-            
-            <button (click)="Enviar()">
+            <textarea name="detalles" cols="60" rows="10" wrap="hard" placeholder=". . . . "></textarea>
+            <button type="submit">
                 <h1>Enviar</h1>
             </button>
         </form>
