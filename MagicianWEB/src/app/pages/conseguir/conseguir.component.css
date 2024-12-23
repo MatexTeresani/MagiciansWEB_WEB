@@ -32,7 +32,7 @@
 
 .inputsform input{
     margin: 10px;
-    width: 85%;
+    width: 90%;
     height: 50px;
     list-style: none;
     background-color: #778DA9;
@@ -72,7 +72,7 @@
 }
 .formulario button{
     margin: 10px;
-    width: 100%;
+    width: 60%;
     height: 100px;
     list-style: none;
     background-color: #5B8E7D;
@@ -99,5 +99,9 @@ ul {
 
     .formulario textarea{
         width: 90%;
+    }
+
+    .formulario button{
+        width: 100%;
     }
 }
