@@ -4,19 +4,19 @@
         <form action="" id="formularioconseguir">
             <ul class="inputsform">
                 <li>
-                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input #nombre type="text" name="nombre" placeholder="Nombre" required>
                 </li>
                 <li>
-                    <input type="text" name="apellido" placeholder="Apellido" required>
+                    <input #apellido type="text" name="apellido" placeholder="Apellido" required>
                 </li>
                 <li>
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input #email type="email" name="email" placeholder="Email" required>
                 </li>
                 <li>
-                    <input type="tel" name="telefono" placeholder="Número de teléfono" required>
+                    <input #telefono type="tel" name="telefono" placeholder="Número de teléfono" required>
                 </li>
                 <li>
-                    <input type="text" name="empresa" placeholder="Nombre de tu empresa" required>
+                    <input #empresa id="empresa" type="text" name="empresa" placeholder="Nombre de tu empresa" required>
                 </li>
             </ul>
             <div class="texto-p-form">
@@ -24,7 +24,7 @@
                 <p>¿Tienes ejemplos de páginas webs en mente?</p>
                 <p>Nos sería de gran ayuda que seas lo más detallado posible.</p>
             </div> 
-            <textarea name="detalles" cols="60" rows="10" wrap="hard" placeholder=". . . . "></textarea>
+            <textarea id="detalles" name="detalles" cols="60" rows="10" wrap="hard" placeholder=". . . . "></textarea>
             <button type="submit" (click)="Enviar()">
                 <h1>Enviar</h1>
             </button>
