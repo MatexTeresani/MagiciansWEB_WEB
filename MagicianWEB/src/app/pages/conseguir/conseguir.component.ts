@@ -25,15 +25,10 @@ export class ConseguirComponent {
     const empresa = document.getElementById('empresa') as HTMLInputElement;
     const detalle = document.getElementById('detalles') as HTMLTextAreaElement;
 
-    if (nombre.value == "" || apellido.value == "" || email.value == "" || telefono.value == "" || empresa.value == "" || detalle.value == "") {
-      
+    if (nombre.value == null || apellido.value == null || email.value == null || telefono.value == null || empresa.value == null || detalle.value == null) {
       alert("Por favor, complete todos los campos");
-      return;
-
     }
     else{
-
-    
 
      this.router.navigate(['consigue-terminado']).then(() => {
       window.scrollTo(0, 0);
