@@ -2,9 +2,9 @@ const express = require('express')
 const cors = require('cors')
 const router = express.Router();
 
-const bot = require('../configs/apiWatsapBot')
+const botFunction = require('../configs/apiTelegramBot')
 
-router.post('envioDeDatos', (req, res) => {
+router.post('/envioDeDatos', (req, res) => {
     const {
         nombre,
         Apellido,
@@ -27,7 +27,7 @@ router.post('envioDeDatos', (req, res) => {
     }
     });
 
-    bot.enviar(
+    botFunction.enviar(
         nombre,
         Apellido,
         Email,
@@ -38,3 +38,5 @@ router.post('envioDeDatos', (req, res) => {
 
     
 })
+
+module.exports = router;
