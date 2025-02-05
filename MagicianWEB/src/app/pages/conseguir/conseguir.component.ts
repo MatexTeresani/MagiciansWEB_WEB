@@ -25,17 +25,21 @@ export class ConseguirComponent {
     const empresa = document.getElementById('empresa') as HTMLInputElement;
     const detalle = document.getElementById('detalles') as HTMLTextAreaElement;
 
-    if (nombre.value == null || apellido.value == null || email.value == null || telefono.value == null || empresa.value == null || detalle.value == null) {
-      alert("Por favor, complete todos los campos");
+    const mensaje  = document.getElementById('mensaje ') as HTMLDivElement;
+    
+    if(!mensaje){
+      console.log("Etiqueta no encotrada")
     }
-    else{
 
-     this.router.navigate(['consigue-terminado']).then(() => {
-      window.scrollTo(0, 0);
-     }); // Navega a la ruta raíz
 
-     console.log("Enviado");
-
+    if (
+      nombre.value && apellido.value &&
+      email.value && telefono.value &&
+      empresa.value && detalle.value != null
+    ) {
+      //envía
+    } else if (mensaje) {
+      mensaje.innerHTML = "Falta algún dato";
     }
   }  
 }
