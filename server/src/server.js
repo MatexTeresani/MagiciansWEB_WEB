@@ -11,9 +11,11 @@ app.use(express.json());
 
 app.use('/api', EnvioDeDatos);
 
+/*
 app.use('/', (req, res) => {
     res.send("Backend de Magician TECH")
 })
+*/
 
 app.use((req, res) => {
     console.log(`Ruta 404 invalida`)

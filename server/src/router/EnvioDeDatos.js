@@ -14,6 +14,8 @@ router.post('/envioDeDatos', (req, res) => {
         Extradatos
     } = req.body;
 
+    console.log(req.body);
+    
     
     res.status(201).json({
     message: "Todo Correcto",
