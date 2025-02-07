@@ -1,6 +1,7 @@
 
 .conseguir{
-    margin: 20px;
+    margin: auto;
+    padding: 35px;
     width: 90%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
