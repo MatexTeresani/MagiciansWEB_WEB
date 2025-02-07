@@ -1,7 +1,7 @@
 
 .conseguir{
-    margin: auto;
-    width: 80%;
+    margin: 20px;
+    width: 90%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
