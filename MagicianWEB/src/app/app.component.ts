@@ -5,7 +5,6 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ConseguirComponent } from './pages/conseguir/conseguir.component';
-import { Header2Component } from './shared/header2/header2.component';
 import { FondoEstrellasComponent } from './pages/fondo-estrellas/fondo-estrellas.component';
 import { ConseguirTerminadoComponent } from './pages/conseguir-terminado/conseguir-terminado.component';
 
@@ -22,7 +21,6 @@ import { ConseguirTerminadoComponent } from './pages/conseguir-terminado/consegu
     ConseguirTerminadoComponent, 
     FooterComponent,
     HeaderComponent,
-    Header2Component,
     FondoEstrellasComponent,
     RouterOutlet,
   ],
