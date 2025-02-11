@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
     const nav = document.querySelector('nav');
@@ -17,16 +20,20 @@ export class HeaderComponent implements OnInit {
       nav.classList.toggle('active');
     }
   }
+
   ngOnInit() {
-    window.addEventListener('scroll', function() {
-      const header = document.querySelector('header');
-      if (header) {
-        if (window.scrollY > 0) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
+    if (isPlatformBrowser(this.platformId)) {
+      window.addEventListener('scroll', function () {
+        const header = document.querySelector('header');
+        if (header) {
+          if (window.scrollY > 0) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
         }
-      }
-    });
+      });
+    }
+  }
 }
-}
+
