@@ -1,4 +1,19 @@
 
 .peticion-realizada{
-    
+  margin: auto;
+  padding: 5%;
+  width: 80%;
+  color: #ffffff;
+  backdrop-filter: blur(10px); /* Desenfoque */
+  background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
+  z-index: -1; /* Asegura que quede detrás del contenido */
+  border-radius: 30px;
+  margin-top:2%;
+  margin-bottom: 2%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.peticion-realizada a{
+  color: #F4A259;
 }

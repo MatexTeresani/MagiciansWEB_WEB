@@ -1,5 +1,7 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { EnvioDatosApiService } from '../../services/envio-datos-api.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-conseguir',
@@ -9,7 +11,7 @@ import { EnvioDatosApiService } from '../../services/envio-datos-api.service';
 })
 export class ConseguirComponent {
 
-  constructor(private envioDatosService: EnvioDatosApiService) {}
+  constructor(private envioDatosService: EnvioDatosApiService, private router : Router) {}
 
   @ViewChild('nombre') nombreRef!: ElementRef;
   @ViewChild('apellido') apellidoRef!: ElementRef;
@@ -39,8 +41,7 @@ export class ConseguirComponent {
       this.envioDatosService.postData(data).subscribe({
         next: (respuesta) => {
           console.log(respuesta);
-          this.mensajeRef.nativeElement.innerText = "Formulario enviado con éxito.";
-          this.mensajeRef.nativeElement.style.color = "green";
+          this.router.navigate(['/consigue-terminado'])
         },
         error: (err) => {
           console.error("Error en el envío:", err);
