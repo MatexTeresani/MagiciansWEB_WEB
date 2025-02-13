@@ -1,7 +1,7 @@
 <main>
     <div class="formulario">
-        <h1>Consigue tu aplicacion</h1>
-        <form action="" id="formularioconseguir">
+        <h1>Consigue tu aplicación</h1>
+        <form id="formularioconseguir" (submit)="Enviar($event)">
             <ul class="inputsform">
                 <li>
                     <input #nombre type="text" name="nombre" placeholder="Nombre" required>
@@ -16,16 +16,16 @@
                     <input #telefono type="number" name="telefono" placeholder="Número de teléfono" required>
                 </li>
                 <li>
-                    <input #empresa id="empresa" type="text" name="empresa" placeholder="Nombre de tu empresa" required>
+                    <input #empresa type="text" name="empresa" placeholder="Nombre de tu empresa" required>
                 </li>
             </ul>
             <div class="texto-p-form">
-                <p>¿Podrías detallar el tipo de pagina web o aplicacion que estás buscando?</p>
-                <p>¿Tienes ejemplos de páginas webs en mente?</p>
+                <p>¿Podrías detallar el tipo de página web o aplicación que estás buscando?</p>
+                <p>¿Tienes ejemplos de páginas web en mente?</p>
                 <p>Nos sería de gran ayuda que seas lo más detallado posible.</p>
             </div>
-            <textarea id="detalles" name="detalles" cols="60" rows="10" wrap="hard" placeholder=". . . . "></textarea>
-            <button type="submit" (click)="Enviar()">
+            <textarea #detalles name="detalles" cols="60" rows="10" wrap="hard" placeholder=". . . . "></textarea>
+            <button type="submit">
                 <h1>Enviar</h1>
             </button>
             <div #mensaje id="mensaje"></div>
