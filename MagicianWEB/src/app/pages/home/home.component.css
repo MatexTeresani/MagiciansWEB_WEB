@@ -52,7 +52,7 @@ main{
     position: absolute;
     top: 10px;
     right: 2%;
-    z-index: 100;
+    z-index: 0;
 
 }
 
@@ -72,7 +72,7 @@ main{
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
-    z-index: -1; /* Asegura que quede detrás del contenido */
+    z-index: 2; /* Asegura que quede detrás del contenido */
     border-radius: 30px;
     margin-top: 22%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
