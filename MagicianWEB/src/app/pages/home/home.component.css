@@ -52,8 +52,8 @@ main{
     position: absolute;
     top: 10px;
     right: 2%;
-    z-index: -100;
-    
+    z-index: 100;
+
 }
 
 .CTPW{
@@ -61,18 +61,18 @@ main{
     top: 500px;
     left: 150px;
     position: absolute;
-    
+
 }
 
 
 .conseguir{
     margin: auto;
-    padding: 5%; 
+    padding: 5%;
     width: 80%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
-    z-index: -1; /* Asegura que quede detrás del contenido */ 
+    z-index: -1; /* Asegura que quede detrás del contenido */
     border-radius: 30px;
     margin-top: 22%;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -116,11 +116,11 @@ main{
         margin-bottom: 100%;
     }
 
-    
+
     .mago-img-1{
         display: none;
         visibility: hidden;
-    } 
+    }
 
     .imagen-Logo{
         position: relative;
@@ -136,7 +136,7 @@ main{
     }
 
     .tech-H1{
-        top: 350px; 
+        top: 350px;
         left: 130px;
         font-size: 50px;
     }
@@ -171,13 +171,13 @@ main{
     padding: 8%;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
-    z-index: -1; /* Asegura que quede detrás del contenido */ 
+    z-index: -1; /* Asegura que quede detrás del contenido */
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     color: #E0E1DD;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    
+
 }
 
 .sobreNosotros img {
