@@ -92,3 +92,108 @@ button span {
     
     display: none;
 }
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: clamp(60px, 8vh, 80px);
+        width: 90%;
+        height: 500px;
+        background-color: #5B8E7D;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        flex-direction: column;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 1px;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding-top: 25px;
+    }
+
+    nav a{
+        text-align: center;
+    }
+
+    nav.active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .headerFooret{
+        display: block;
+        margin-top: 30%;
+        align-items: center;
+        text-align: center;
+    }
+
+    button {
+        position: relative;
+        display: flex;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    nav a {
+        font-size: 14px;
+        width: 90%;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 45px;
+    }
+
+    nav{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    header {
+        padding: 6px 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    nav {
+        right: 4%;
+        transform: translateX(calc(100% + 10px));
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-height: 480px) and (orientation: landscape) {
+    header {
+        height: 60px;
+    }
+
+    nav {
+        top: 60px;
+        width: min(280px, 60%);
+    }
+
+    nav a {
+        padding: 5px 10px;
+    }
+}
