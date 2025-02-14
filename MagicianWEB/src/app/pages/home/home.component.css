@@ -108,6 +108,24 @@ main{
     background-color: #466e62;
 }
 
+.ventajas{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.ventajas strong{
+    color: #F4A259;
+    
+}
+
+.ventajas li::marker{
+    color: #F4A259;
+}
+
+.ventajas li{
+    margin-bottom: 2%;
+}
 
 /* los media son lo que da problema*/
 @media(max-width: 820px) {
