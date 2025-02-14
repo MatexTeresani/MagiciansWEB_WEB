@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,} from '@angular/core';
+
+
 
 @Component({
   selector: 'app-fondo-estrellas',
@@ -12,8 +14,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class FondoEstrellasComponent implements OnInit {
+
   stars: { x: number; y: number; size: number }[] = [];
-  totalStars = 50; // Número total de estrellas
+  totalStars = 20; // Número total de estrellas
 
   ngOnInit(): void {
     this.generateStars();
@@ -21,8 +24,8 @@ export class FondoEstrellasComponent implements OnInit {
 
   generateStars(): void {
     this.stars = Array.from({ length: this.totalStars }, () => ({
-      x: Math.random() * 100, // Posición X en porcentaje
-      y: Math.random() * 200, // Posición Y en porcentaje
+      x: Math.random() * 95, // Posición X en porcentaje
+      y: Math.random() * 120, // Posición Y en porcentaje
       size: Math.random() * 13 + 15 // Tamaño aleatorio entre 1 y 3
     }));
   }
