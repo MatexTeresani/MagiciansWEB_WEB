@@ -1,0 +1,30 @@
+{
+  "name": "magiciansweb_web",
+  "version": "1.0.0",
+  "description": "Esta es la pagina web oficial de la empresa",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm --prefix MagicianWEB start\" \"npm --prefix server start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MagicianTech/MagiciansWEB_WEB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MagicianTech/MagiciansWEB_WEB/issues"
+  },
+  "homepage": "https://github.com/MagicianTech/MagiciansWEB_WEB#readme",
+  "private": true,
+  "workspaces": [
+    "MagicianWEB",
+    "server"
+  ],
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

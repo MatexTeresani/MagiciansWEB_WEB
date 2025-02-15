@@ -1,11 +1,11 @@
 .formulario{
     margin: auto;
-    padding: 5%; 
+    padding: 5%;
     width: 80%;
     color: #ffffff;
     backdrop-filter: blur(10px); /* Desenfoque */
     background: rgba(27, 38, 59, 0.30); /* Color semitransparente */
-    z-index: -1; /* Asegura que quede detrás del contenido */ 
+    z-index: -1; /* Asegura que quede detrás del contenido */
     border-radius: 30px;
     margin-top:2%;
     margin-bottom: 2%;
@@ -103,6 +103,6 @@ ul {
     }
 
     .formulario button{
-        width: 100%;
+        width: 90%;
     }
 }
