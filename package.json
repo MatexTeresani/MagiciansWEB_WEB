@@ -4,8 +4,8 @@
   "description": "Esta es la pagina web oficial de la empresa",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"npm --prefix MagicianWEB start\" \"npm --prefix server start\""
+    "build": "cd MagicianWEB && ng build --configuration=production",
+    "start": "npm --prefix server start"
   },
   "repository": {
     "type": "git",
