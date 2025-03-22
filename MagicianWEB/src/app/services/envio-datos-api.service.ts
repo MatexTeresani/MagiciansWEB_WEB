@@ -17,7 +17,7 @@ export interface DatosEnvio {
   providedIn: 'root'
 })
 export class EnvioDatosApiService {
-  private baseUrl = 'http://localhost:5000/api/envioDeDatos'; // Cambia esto por la URL de tu backend
+  private baseUrl = 'https://magiciansweb-web.onrender.com/api/envioDeDatos'; // Cambia esto por la URL de tu backend
 
   constructor(private http: HttpClient) {}
 
